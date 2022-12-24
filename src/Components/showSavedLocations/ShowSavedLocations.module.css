@@ -45,6 +45,10 @@
   z-index: 5;
 }
 
+.noResultsMessage {
+  color: red;
+}
+
 @media only screen and (max-width: 800px) {
   .savedPlaces {
     font-size: 0.7em;
@@ -58,6 +62,11 @@
   }
 
   .placeDetails span {
+    font-size: 0.8em;
+  }
+  .noResultsMessage {
+    position: relative;
+    top: 1em;
     font-size: 0.8em;
   }
 }

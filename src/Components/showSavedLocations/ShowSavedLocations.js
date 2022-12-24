@@ -37,36 +37,40 @@ function ShowLocations(props) {
 
   return (
     <div className={styles.savedPlaces}>
-      {data.length > 0
-        ? data.map((place, i) => {
-            return (
-              <div
+      {data.length > 0 ? (
+        data.map((place, i) => {
+          return (
+            <div
+              onClick={(e) => {
+                if (info.mapCoords[i]) props.zoom(info.mapCoords[i]);
+                props.moveTo(true);
+              }}
+              className={styles.placeDetails}
+              key={place.place_id}
+              id={place.place_id}
+            >
+              <img
                 onClick={(e) => {
-                  if (info.mapCoords[i]) props.zoom(info.mapCoords[i]);
-                  props.moveTo(true);
+                  deleteHandler(i);
                 }}
-                className={styles.placeDetails}
-                key={place.place_id}
-                id={place.place_id}
-              >
-                <img
-                  onClick={(e) => {
-                    deleteHandler(i);
-                  }}
-                  className={styles.deleteIcon}
-                  src={deleteIcon}
-                />
-                <h5>{date}</h5>
-                <span>{place.address ? place.address.country : ""}</span>
-                <span>
-                  {place.address ? place.address.village : ""}
-                  {place.address ? "," && place.address.city : ""}
-                </span>
-                <span>{place.address ? place.address.municipality : ""}</span>
-              </div>
-            );
-          })
-        : "No saved locations found"}
+                className={styles.deleteIcon}
+                src={deleteIcon}
+              />
+              <h5>{date}</h5>
+              <span>{place.address ? place.address.country : ""}</span>
+              <span>
+                {place.address ? place.address.village : ""}
+                {place.address ? "," && place.address.city : ""}
+              </span>
+              <span>{place.address ? place.address.municipality : ""}</span>
+            </div>
+          );
+        })
+      ) : (
+        <span className={styles.noResultsMessage}>
+          No saved locations found
+        </span>
+      )}
     </div>
   );
 }

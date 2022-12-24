@@ -11,6 +11,9 @@
   color: white;
   z-index: 5;
 }
+.confirmMessage span {
+  display: block;
+}
 
 .confirmMessage div {
   width: 20%;
