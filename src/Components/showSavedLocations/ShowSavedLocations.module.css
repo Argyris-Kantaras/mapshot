@@ -48,6 +48,8 @@
 @media only screen and (max-width: 800px) {
   .savedPlaces {
     font-size: 0.7em;
+    width: 100%;
+    word-break: break-all;
   }
 
   .deleteIcon {

@@ -20,6 +20,10 @@
   justify-content: center;
 }
 
+.notLoggedMessage {
+  color: red;
+}
+
 @media only screen and (max-width: 800px) {
   .profile {
     margin-top: 40%;
@@ -30,5 +34,10 @@
     width: 13rem;
     font-size: 0.7em;
     word-break: break-all;
+  }
+  .notLoggedMessage {
+    position: relative;
+    top: 3em;
+    font-size: 0.8em;
   }
 }

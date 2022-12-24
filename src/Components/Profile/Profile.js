@@ -17,10 +17,10 @@ function Profile() {
   }, [info]);
 
   if (info.user === undefined) {
-    return <div>Not Logged in</div>;
+    return <div className={styles.notLoggedMessage}>Not Logged in</div>;
   }
   if (info.user === null) {
-    return <div>Not Logged in</div>;
+    return <div className={styles.notLoggedMessage}>Not Logged in</div>;
   }
   return (
     <div ref={profileRef} className={styles.profile}>
