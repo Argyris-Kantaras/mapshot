@@ -35,13 +35,13 @@
 
 @media only screen and (max-width: 800px) {
   .confirmMessage {
-    font-size: 0.8em;
+    font-size: 0.7em;
     width: 28%;
   }
   .yesBtn {
-    font-size: 0.7em;
+    font-size: 0.6em;
   }
   .noBtn {
-    font-size: 0.7em;
+    font-size: 0.6em;
   }
 }
