@@ -1,0 +1,128 @@
+.menuBar {
+  display: flex;
+}
+
+.menuBar div {
+  display: flex;
+}
+
+.menuBar span {
+  margin-left: 1rem;
+  height: 1.1em;
+  border-radius: 0.5em;
+  padding: 0.2em;
+}
+
+.menuBar span:hover {
+  cursor: pointer;
+  background-image: linear-gradient(
+    to right bottom,
+    rgb(10, 90, 238) 5%,
+    rgb(34, 244, 34) 100%
+  );
+}
+
+.theme {
+  position: relative;
+  left: 20%;
+}
+
+.theme:hover {
+  cursor: pointer;
+}
+
+.themeBase {
+  background-color: rgb(53, 53, 53);
+  width: 2.5em;
+  height: 1.5em;
+  border-radius: 1em;
+}
+
+.themeMiddle {
+  position: relative;
+  top: 0.2em;
+  width: 2.2em;
+  height: 1em;
+}
+
+.themeBtn {
+  position: relative;
+  /* left: 58%; */
+  background-color: yellowgreen;
+  width: 50%;
+  border-radius: 1em;
+  transition: 0.3s;
+}
+
+.mapOptions {
+  display: flex;
+  flex-direction: column;
+}
+.options {
+  display: flex;
+  flex-direction: column;
+  font-style: italic;
+}
+
+.locateIcon {
+  position: absolute;
+  top: 8%;
+  left: 4%;
+  width: 2em;
+  height: 2em;
+}
+
+.authBtns {
+  display: flex;
+  position: absolute;
+  top: 4.5rem;
+  left: 22%;
+  font-size: 0.7rem;
+}
+
+@media only screen and (max-width: 800px) {
+  .menuBar {
+    /* display: block; */
+    width: 30%;
+  }
+
+  .menuBar h2 {
+    font-size: 0.8em;
+    position: relative;
+    left: 10%;
+  }
+
+  .locateIcon {
+    width: 1em;
+    height: 1em;
+    top: 2%;
+    left: 17%;
+  }
+
+  .menuBar span {
+    font-size: 0.5em;
+    margin-left: 0.1rem;
+    height: 1.1em;
+    border-radius: 0.5em;
+    padding: 0.2em;
+    position: relative;
+    top: 80%;
+    left: 0%;
+  }
+  .options {
+    position: relative;
+    top: 20%;
+  }
+
+  .theme {
+    display: flex;
+    position: absolute;
+    flex-direction: column;
+    font-size: 0.4em;
+    left: 25%;
+  }
+
+  .authBtns {
+    left: 15%;
+  }
+}

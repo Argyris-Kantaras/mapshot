@@ -1,0 +1,47 @@
+.container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  top: 90%;
+  z-index: 10;
+  background-color: aliceblue;
+  align-items: center;
+}
+.container:hover {
+  cursor: pointer;
+}
+.container:hover .firstLine {
+  border-top: solid 0.15em yellowgreen;
+}
+.container:hover .secondLine {
+  border-top: solid 0.15em yellowgreen;
+}
+.container:hover .thirdLine {
+  border-bottom: solid 0.15em yellowgreen;
+}
+
+.firstLine {
+  border-top: solid 0.15em;
+  width: 2em;
+  height: 0.3em;
+}
+
+.secondLine {
+  border-top: solid 0.15em;
+  width: 1.5em;
+  height: 0.3em;
+  /* border-radius: 0.5em; */
+}
+
+.thirdLine {
+  border-bottom: solid 0.15em;
+  width: 1em;
+  height: 0.01em;
+  border-radius: 0.5em;
+}
+
+@media only screen and (max-width: 800px) {
+  .container {
+    top: 73%;
+  }
+}

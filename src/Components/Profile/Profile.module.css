@@ -1,0 +1,34 @@
+.profileDetails {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.profileDetails div {
+  width: 40%;
+  border: 1px inset;
+  margin: 0.5em;
+}
+
+.profileDetails label {
+  color: rgb(0, 0, 0, 0.5);
+}
+
+.profileDetails div div {
+  margin: 0%;
+  width: 100%;
+  justify-content: center;
+}
+
+@media only screen and (max-width: 800px) {
+  .profile {
+    margin-top: 40%;
+  }
+
+  .profileDetails {
+    flex-direction: column;
+    width: 13rem;
+    font-size: 0.7em;
+    word-break: break-all;
+  }
+}

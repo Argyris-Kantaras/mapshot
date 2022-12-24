@@ -1,0 +1,13 @@
+1) Create profile and sign-in +++++++++++++++
+
+2) find my location button ++++++++++++++++++++++
+
+3) save and delete data in localStrage++++++++++++++++++
+
+4) Adjust styles and popups etc. Also mobile friendly
+
+5) Fix the search bar------------
+
+7) delete button
+
+6) Add error boundaries

@@ -1,0 +1,61 @@
+.savedPlaces {
+  margin-top: 3em;
+  height: 50em;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+.savedPlaces div {
+  background-color: rgb(139, 255, 139);
+  margin-top: 1em;
+}
+
+.savedPlaces h5 {
+  display: inline-block;
+  position: relative;
+  width: 100%;
+}
+
+.savedPlaces div:nth-child(even) {
+  background-color: rgb(113, 160, 248);
+}
+
+.savedPlaces span {
+  margin: 0.3em;
+}
+.placeDetails {
+}
+
+.savedPlaces div:hover {
+  cursor: pointer;
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0px 1px 3px 1px rgb(139, 255, 139);
+}
+
+.deleteIcon {
+  display: inline-block;
+  width: 1rem;
+  position: relative;
+  left: 45%;
+  z-index: 5;
+}
+
+.deleteIcon:hover {
+  transform: scale(1.2);
+  z-index: 5;
+}
+
+@media only screen and (max-width: 800px) {
+  .savedPlaces {
+    font-size: 0.7em;
+  }
+
+  .deleteIcon {
+    width: 1em;
+    left: 40%;
+  }
+
+  .placeDetails span {
+    font-size: 0.8em;
+  }
+}

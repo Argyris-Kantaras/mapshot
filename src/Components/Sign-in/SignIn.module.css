@@ -1,0 +1,89 @@
+.logIn {
+  display: flex;
+  background-color: rgba(255, 255, 255, 0.6);
+  flex-direction: column;
+  align-items: center;
+}
+
+.logIn div {
+  margin: 0.5em;
+}
+
+.logIn label {
+  margin-right: 0.5em;
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.heading {
+  display: inline-block;
+  width: fit-content;
+}
+
+.submitBtn {
+  background-color: rgb(221, 221, 221);
+  width: fit-content;
+  border-radius: 1em;
+  padding: 0.5em;
+  font-style: italic;
+}
+
+.submitBtn:hover {
+  background-image: linear-gradient(
+    to right bottom,
+    rgb(10, 90, 238) 5%,
+    rgb(34, 244, 34) 100%
+  );
+  cursor: pointer;
+}
+
+.signUpPageBtn {
+  font-size: 1.2em;
+  color: purple;
+  font-style: italic;
+}
+.signUpPageBtn:hover {
+  cursor: pointer;
+  color: red;
+}
+
+.closeBtn {
+  background-color: rgba(184, 184, 184, 0.6);
+  position: absolute;
+  left: 28%;
+  padding: 0.2em;
+  font-weight: bold;
+}
+.closeSignUpBtn {
+  background-color: rgba(184, 184, 184, 0.6);
+  position: absolute;
+  left: 40%;
+  top: 0%;
+  padding: 0.2em;
+  font-weight: bold;
+  width: fit-content;
+  display: inline-block;
+}
+
+.closeBtn:hover {
+  background-color: red;
+  cursor: pointer;
+  color: white;
+}
+
+.warningMessage {
+  color: red;
+  font-size: 0.8em;
+}
+
+@media only screen and (max-width: 800px) {
+  .logIn {
+    font-size: 0.7em;
+    margin-top: 50%;
+  }
+  .logIn div {
+    margin: 0.3em;
+  }
+  .logIn input {
+    width: 5em;
+  }
+}
